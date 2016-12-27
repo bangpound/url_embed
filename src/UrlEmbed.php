@@ -43,8 +43,8 @@ class UrlEmbed implements UrlEmbedInterface {
   /**
    * @{inheritdoc}
    */
-  public function getEmbed($request, array $config = []) {
-    return Embed::create($request, $config ?: $this->config);
+  public function getEmbed($url, array $config = []) {
+    return Embed::create($url, $config ?: $this->config);
   }
 
 }

@@ -21,8 +21,8 @@ interface UrlEmbedInterface {
   public function setConfig(array $config);
 
   /**
-   * @param string|\Embed\Request $request
-   *   The url or a request with the url
+   * @param string $url
+   *   The url
    * @param array $config
    *   (optional) Options passed to the adapter. If not provided the default
    *   options on the service will be used.
@@ -32,8 +32,8 @@ interface UrlEmbedInterface {
    * @throws \InvalidArgumentException
    *   If any config argument is not valid
    *
-   * @return \Embed\Adapters\AdapterInterface
+   * @return \Embed\Adapters\Adapter
    */
-  public function getEmbed($request, array $config = []);
+  public function getEmbed($url, array $config = []);
 
 }
